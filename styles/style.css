@@ -1,0 +1,467 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/bg2.jpg");
+  width: 100%;
+  height: 1000px;
+  background-position: top;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+section,
+footer {
+  margin-top: 150px;
+}
+
+/***************Header**************/
+header {
+  position: sticky;
+  top: 0;
+  right: 0;
+  background-color: rgba(10, 11, 15, 0.9);
+  z-index: 100000000000;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header nav ul a {
+  padding: 1rem;
+  color: white;
+}
+header nav ul a:hover {
+  color: #34e3c9;
+  transition: 0.5s;
+}
+header nav ul .home {
+  color: #34e3c9;
+}
+header nav button {
+  padding: 0.5rem;
+  border-radius: 10%;
+  border: none;
+}
+
+/********************main*****************************/
+.hero-sec {
+  text-align: center;
+  line-height: 80px;
+  color: white;
+}
+.hero-sec h1 {
+  font-size: 4rem;
+}
+.hero-sec a {
+  border: 1px solid white;
+  background-color: white;
+  padding: 1rem;
+  color: black;
+  border-radius: 10px;
+  font-size: small;
+}
+.hero-sec a:hover {
+  background-color: #34e3c9;
+  transition: 0.5s;
+  color: white;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(10, 11, 15, 0.9);
+  width: 70%;
+  margin: 0 auto;
+}
+.about-me div {
+  margin-top: 50px;
+  margin: 20px;
+}
+.about-me .about-img img {
+  width: 380px;
+  border-radius: 20px;
+}
+.about-me .about-text p {
+  color: white;
+  font-size: x-large;
+  opacity: 0.5;
+}
+.about-me .about-text .title {
+  font-size: 2rem;
+  opacity: 1;
+}
+.about-me .about-more {
+  display: flex;
+  justify-content: space-around;
+  margin-left: -30px;
+}
+.about-me .about-more p {
+  font-size: 1.1rem;
+}
+.about-me .about-more .head {
+  opacity: 1;
+}
+.about-me .about-more .left-div {
+  width: 50%;
+}
+.about-me .about-more .right-div {
+  line-height: 2rem;
+}
+.about-me .about-more .right-div ul {
+  color: #34e3c9;
+  opacity: 0.5;
+}
+
+.portfolio {
+  background-color: rgba(10, 11, 15, 0.9);
+  text-align: center;
+  padding: 30px;
+  width: 70%;
+  margin: 0 auto;
+  line-height: 2;
+}
+.portfolio p {
+  color: white;
+  font-size: larger;
+  opacity: 0.5;
+}
+.portfolio .titlee {
+  font-size: xx-large;
+  opacity: 1;
+}
+
+.Portfolio-sec .portfolio .grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  min-height: 100vh;
+}
+.Portfolio-sec .portfolio .grid .item4 {
+  margin-top: -200px;
+}
+.Portfolio-sec .portfolio .grid .item5 {
+  margin-top: -50px;
+}
+.Portfolio-sec .portfolio .grid .item7 {
+  margin-top: -180px;
+}
+.Portfolio-sec .portfolio .grid .item8 {
+  margin-top: -195px;
+}
+.Portfolio-sec .portfolio .grid .item10 {
+  margin-top: -175px;
+}
+.Portfolio-sec .portfolio .grid .item11 {
+  margin-top: -25px;
+}
+.Portfolio-sec .portfolio .grid .item13 {
+  margin-top: -215px;
+}
+.Portfolio-sec .portfolio .grid .items:hover {
+  opacity: 0.5;
+  transition: 0.75s;
+}
+.Portfolio-sec .portfolio img {
+  width: 280px;
+}
+
+.my-service {
+  background-color: rgba(10, 11, 15, 0.9);
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 40px;
+  display: flex;
+}
+.my-service .left-box {
+  width: 50%;
+}
+.my-service .left-box .title {
+  color: white;
+  font-size: xx-large;
+}
+.my-service .left-box .text {
+  color: white;
+  opacity: 0.5;
+  font-size: x-large;
+}
+.my-service .left-box .flex {
+  display: flex;
+  margin-top: 20px;
+}
+.my-service .left-box .flex p {
+  color: white;
+}
+.my-service .left-box .flex .title {
+  font-size: larger;
+}
+.my-service .left-box .flex .text {
+  opacity: 0.5;
+  font-size: medium;
+}
+.my-service .left-box .flex .text-area {
+  margin-left: 20px;
+}
+.my-service .right-box {
+  width: 50%;
+  padding: 20px;
+  position: relative;
+  left: 80px;
+}
+.my-service .right-box div {
+  position: absolute;
+  top: 200px;
+  left: -10px;
+}
+
+.contact {
+  background-color: rgba(10, 11, 15, 0.9);
+  width: 70%;
+  height: auto;
+  text-align: left;
+  padding: 30px;
+  margin: 0 auto;
+}
+.contact p {
+  color: white;
+}
+.contact .title {
+  font-size: xx-large;
+}
+.contact .text {
+  font-size: larger;
+  opacity: 0.5;
+}
+.contact .flex {
+  display: flex;
+}
+.contact .flex .form {
+  width: 50%;
+}
+.contact .flex .form input,
+.contact .flex .form textarea {
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(10, 11, 15, 0.9);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #34e3c9;
+}
+.contact .flex .form button {
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  color: #34e3c9;
+}
+.contact .flex .info {
+  width: 40%;
+}
+.contact .flex .info .information {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+.contact .flex .info .information .text {
+  opacity: 0.5;
+  font-size: medium;
+}
+.contact .flex .info .information div {
+  margin-left: 20px;
+}
+
+/*********************responsiv***********************/
+@media (min-width: 340px) and (max-width: 768px) {
+  header {
+    display: none;
+  }
+  .hero-sec p {
+    font-size: small;
+  }
+  .hero-sec h1 {
+    font-size: xx-large;
+  }
+  .about-me {
+    display: block;
+  }
+  .about-me .about-img img {
+    width: 150px;
+    margin: 36px;
+  }
+  .about-me .about-more {
+    display: block;
+  }
+  .Portfolio-sec .portfolio .grid {
+    display: block;
+    margin-left: -28px;
+  }
+  .Portfolio-sec .portfolio .grid .item4 {
+    margin: -1px;
+  }
+  .Portfolio-sec .portfolio .grid .item5 {
+    margin: -1px;
+  }
+  .Portfolio-sec .portfolio .grid .item8 {
+    margin: -1px;
+  }
+  .Portfolio-sec .portfolio .grid .item7 {
+    margin: -1px;
+  }
+  .Portfolio-sec .portfolio .grid .item11 {
+    margin: -1px;
+  }
+  .Portfolio-sec .portfolio .grid .item13 {
+    margin: -1px;
+  }
+  .my-service img {
+    display: none;
+  }
+  .my-service .left-box .title {
+    font-size: medium;
+  }
+  .my-service .left-box .text {
+    font-size: small;
+  }
+  .my-service .left-box .flex .text-area .title {
+    margin-left: -20px;
+    font-size: small;
+  }
+  .my-service .left-box .flex .text-area .text {
+    margin-left: -20px;
+    font-size: small;
+  }
+  .contact .title {
+    font-size: medium;
+  }
+  .contact .flex {
+    display: block;
+  }
+  .contact .flex .form textarea {
+    display: none;
+  }
+  .contact .flex .form button {
+    margin-left: 60px;
+    padding: 5px;
+  }
+  .contact .flex .info {
+    width: 100%;
+  }
+  .contact .flex .info .information {
+    width: 100%;
+  }
+  .contact .flex .info .information img {
+    display: none;
+  }
+  .contact .flex .info .information div {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: -20px;
+  }
+  .contact .flex .info .information div .text {
+    font-size: small;
+  }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  header {
+    display: none;
+  }
+  .hero-sec p {
+    font-size: small;
+  }
+  .hero-sec h1 {
+    font-size: xx-large;
+  }
+  .about-me {
+    display: block;
+  }
+  .about-me .about-img img {
+    width: 150px;
+    margin: 36px;
+  }
+  .about-me .about-more {
+    display: block;
+  }
+  .Portfolio-sec .portfolio .grid {
+    display: block;
+    margin-left: -28px;
+  }
+  .Portfolio-sec .portfolio .grid .item4 {
+    margin: -1px;
+  }
+  .Portfolio-sec .portfolio .grid .item5 {
+    margin: -1px;
+  }
+  .Portfolio-sec .portfolio .grid .item8 {
+    margin: -1px;
+  }
+  .Portfolio-sec .portfolio .grid .item7 {
+    margin: -1px;
+  }
+  .Portfolio-sec .portfolio .grid .item11 {
+    margin: -1px;
+  }
+  .Portfolio-sec .portfolio .grid .item13 {
+    margin: -1px;
+  }
+  .my-service img {
+    display: none;
+  }
+  .my-service .left-box .title {
+    font-size: medium;
+  }
+  .my-service .left-box .text {
+    font-size: small;
+  }
+  .my-service .left-box .flex .text-area .title {
+    margin-left: -20px;
+    font-size: small;
+  }
+  .my-service .left-box .flex .text-area .text {
+    margin-left: -20px;
+    font-size: small;
+  }
+  .contact .title {
+    font-size: medium;
+  }
+  .contact .flex {
+    display: block;
+  }
+  .contact .flex .form textarea {
+    display: none;
+  }
+  .contact .flex .form button {
+    margin-left: 60px;
+    padding: 5px;
+  }
+  .contact .flex .info {
+    width: 100%;
+  }
+  .contact .flex .info .information {
+    width: 100%;
+  }
+  .contact .flex .info .information img {
+    display: none;
+  }
+  .contact .flex .info .information div {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: -20px;
+  }
+  .contact .flex .info .information div .text {
+    font-size: small;
+  }
+}/*# sourceMappingURL=style.css.map */
